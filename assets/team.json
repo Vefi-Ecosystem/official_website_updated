@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Emmanuel James",
+    "position": "Chief Executive Officer",
+    "image": "/images/emmanuel_james.jpg",
+    "socials": {
+      "twitter": "https://twitter.com/HighrankinEmmah?s=20&t=8ddoBoLhAA0bFr-uQa8eSg",
+      "linkedin": "https://www.linkedin.com/in/jamesemmah/"
+    }
+  },
+  {
+    "name": "Kingsley Victor",
+    "position": "Chief Technical Officer",
+    "image": "/images/kingsley_victor.jpg",
+    "socials": {
+      "github": "https://github.com/kingsley-einstein",
+      "twitter": "https://twitter.com/java_warrior",
+      "linkedin": "https://www.linkedin.com/in/kingsley-victor-952550169/"
+    }
+  },
+  {
+    "name": "Kue Barinor Paul",
+    "position": "Legal Officer",
+    "image": "/images/barinor_kue.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/kue-barinor-paul-0793a3b3/"
+    }
+  }
+]
