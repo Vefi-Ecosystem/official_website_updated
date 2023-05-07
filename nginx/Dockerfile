@@ -1,6 +1,5 @@
 FROM nginx:stable-alpine
 COPY nginx.conf /etc/nginx/conf.d
-COPY .env /
 COPY vefi.crt /certs/vefi.crt
 COPY vefi.key /certs/vefi.key
 EXPOSE 80/tcp
