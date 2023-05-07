@@ -1,5 +1,6 @@
 FROM node:16-alpine
 COPY components /components/
+COPY assets /assets/
 COPY pages /pages/
 COPY public /public/
 COPY styles /styles/
