@@ -7,7 +7,6 @@ COPY context /context/
 COPY scripts /scripts/
 COPY *.json /
 COPY *.js /
-COPY *.ts /
 RUN npm install
 RUN ["yarn", "build"]
 EXPOSE 22600
