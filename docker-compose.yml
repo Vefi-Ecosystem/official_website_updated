@@ -1,0 +1,25 @@
+version: "3.3"
+services:
+  website-frontend:
+    hostname: website-frontend
+    container_name: website-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - official-web
+  website-proxy:
+    hostname: website-proxy
+    container_name: website-proxy
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    networks:
+      - official-web
+    depends_on:
+      - website-frontend
+    ports:
+      - 40000:80
+networks:
+  official-web:
+    external: false

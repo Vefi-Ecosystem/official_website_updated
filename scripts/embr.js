@@ -15,10 +15,10 @@
   config: {
     chain: "brise",
     exchange: "sphynx",
-    lpAddress: "0xe029763b4B98F657De029F2E5c2Af820c6a111B0",
+    lpAddress: "0x06673e42629081107aDF7B0E2551B2C7D45CD84e",
     token: {
-      address: "0xD6447d2fA919811c41a064bDbdaB1E281F8de9B2",
-      name: "Vefi Ecosystem Token",
+      address: "0x927eFa8c553bC6bc7a4c65719Fa415fD3d17E6cE",
+      name: "The Vefi Token",
       symbol: "VEF",
       decimals: 18,
       logoUrl: "https://i.imgur.com/9AIg0Ex.png",
