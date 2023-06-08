@@ -8,7 +8,7 @@ COPY context /context/
 COPY scripts /scripts/
 COPY *.json /
 COPY *.js /
-RUN npm install
-RUN ["yarn", "build"]
+RUN yarn
+RUN yarn build
 EXPOSE 22600
-ENTRYPOINT ["yarn", "start", "-p", "22600"]
+ENTRYPOINT yarn start -p 22600
