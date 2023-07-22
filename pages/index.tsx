@@ -90,7 +90,7 @@ const Footer = () => (
         Instagram
       </a>
     </div>
-    <span className="font-poppins font-[400] text-[20px] uppercase text-white">Copyright 2022 Vefi Ecosystem</span>
+    <span className="font-poppins font-[400] text-[20px] uppercase text-white">Copyright {(new Date()).getFullYear()} Vefi Ecosystem</span>
   </div>
 );
 
