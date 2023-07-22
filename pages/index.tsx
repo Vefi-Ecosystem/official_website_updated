@@ -15,10 +15,9 @@ type IHeaderProps = {
   partnersRef: MutableRefObject<HTMLElement>;
   teamRef: MutableRefObject<HTMLElement>;
   productsRef: MutableRefObject<HTMLElement>;
-  buyTokensRef: MutableRefObject<HTMLElement>;
 };
 
-const Header = ({ homeRef, partnersRef, teamRef, productsRef, buyTokensRef }: IHeaderProps) => {
+const Header = ({ homeRef, partnersRef, teamRef, productsRef }: IHeaderProps) => {
   const { theme } = useThemeContext();
   return (
     <div className="flex justify-between gap-6 items-center px-3 py-4">
@@ -498,7 +497,7 @@ export default function IndexPage() {
       </Head>
       <div className={`flex flex-col justify-start items-center w-screen h-screen overflow-auto ${theme === "light" ? "bg-[#fff]" : "bg-[#000]"}`}>
         <div className={`${theme === "light" ? "bg-[#387ce1]" : "bg-[#387ce1]/30"} flex flex-col w-full px-4 justify-between gap-12`}>
-          <Header buyTokensRef={buyTokensRef} homeRef={homeRef} partnersRef={partnersRef} teamRef={teamRef} productsRef={productsRef} />
+          <Header homeRef={homeRef} partnersRef={partnersRef} teamRef={teamRef} productsRef={productsRef} />
           <div ref={homeRef} className="w-full">
             <Hero />
           </div>
@@ -517,10 +516,9 @@ export default function IndexPage() {
           <Team />
         </div>
         <div
-          ref={buyTokensRef}
           className={`${theme === "light" ? "bg-[#387ce1]" : "bg-[#387ce1]/30"} flex flex-col w-full px-4 justify-center items-center gap-12`}
         >
-          <h3 className="font-poppins font-[700] text-[30px] md:text-[48px] text-[#fff]">Buy VEF Tokens</h3>
+          {/* <h3 className="font-poppins font-[700] text-[30px] md:text-[48px] text-[#fff]">Buy VEF Tokens</h3>
           <p className="font-[400] text-[16px] md:text-[27px] font-poppins text-[#fff] w-full md:max-w-[1146px]">
             The Vefi Ecosystem Token (VEF) powers the ecosystem and admits utility in a range of products shipped by us. You can purchase this
             ubiquitous token directly on our website using your wallet.
@@ -530,8 +528,8 @@ export default function IndexPage() {
             <button className="bg-[linear-gradient(180deg,_#d6d6d6_0%,_#fff_100%)] text-[#105dcf] font-[700] rounded-[30px] px-2 py-2 font-poppins shadow-[7.551e-16px_12.3333px_24.6667px_rgba(51,51,51,0.24),_inset_-2.34951e-16px_-3.83704px_3.83704px_#cccccc,_inset_2.34951e-16px_3.83704px_3.83704px_#fff] text-[13px]">
               View Token Information
             </button>
-          </a>
-          <div className="overflow-auto">
+          </a> */}
+          <div className="overflow-auto my-5">
             <Footer />
           </div>
         </div>
