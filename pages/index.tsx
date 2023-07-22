@@ -66,9 +66,6 @@ const Header = ({ homeRef, partnersRef, teamRef, productsRef }: IHeaderProps) =>
             <li onClick={() => teamRef.current?.scrollIntoView({ behavior: "smooth" })}>
               <label className="link link-hover w-full btn btn-ghost">Team</label>
             </li>
-            <li onClick={() => buyTokensRef.current?.scrollIntoView({ behavior: "smooth" })}>
-              <label className="link link-hover w-full btn btn-ghost">Buy VEF Tokens</label>
-            </li>
           </ul>
           <ThemeSwitch />
         </div>
