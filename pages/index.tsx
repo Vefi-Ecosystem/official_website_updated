@@ -34,9 +34,6 @@ const Header = ({ homeRef, partnersRef, teamRef, productsRef }: IHeaderProps) =>
         <button onClick={() => teamRef.current?.scrollIntoView({ behavior: "smooth" })} className="link link-hover text-white">
           Team
         </button>
-        <button onClick={() => buyTokensRef.current?.scrollIntoView({ behavior: "smooth" })} className="link link-hover text-white">
-          Buy VEF Tokens
-        </button>
       </div>
       <Image src="/images/vefi_logo.svg" alt="logo" width={81} height={26} />
       <div className="hidden md:flex justify-center gap-10 items-center">
