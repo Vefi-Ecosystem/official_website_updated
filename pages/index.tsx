@@ -35,7 +35,7 @@ const Header = ({ homeRef, partnersRef, teamRef, productsRef }: IHeaderProps) =>
           Team
         </button>
       </div>
-      <Image src="/images/vefi_logo.svg" alt="logo" width={81} height={26} />
+      <Image src="/header.svg" alt="logo" width={100} height={100} />
       <div className="hidden md:flex justify-center gap-10 items-center">
         <a href="https://t.me/vefi_official" rel="noreferrer" target="_blank">
           <button className="bg-[linear-gradient(180deg,_#d6d6d6_0%,_#fff_100%)] text-[#105dcf] font-[700] rounded-[30px] px-2 py-2 font-poppins shadow-[7.551e-16px_12.3333px_24.6667px_rgba(51,51,51,0.24),_inset_-2.34951e-16px_-3.83704px_3.83704px_#cccccc,_inset_2.34951e-16px_3.83704px_3.83704px_#fff] text-[13px]">
@@ -90,7 +90,7 @@ const Footer = () => (
         Instagram
       </a>
     </div>
-    <span className="font-poppins font-[400] text-[20px] uppercase text-white">Copyright 2022 Vefi Ecosystem</span>
+    <span className="font-poppins font-[400] text-[20px] uppercase text-white">Copyright {(new Date()).getFullYear()} VefDefi Ecosystem</span>
   </div>
 );
 
@@ -126,7 +126,7 @@ const Hero = () => (
         </a>
       </div>
       <div className="flex flex-col justify-between items-center flex-1 gap-10">
-        <span className="font-poppins text-[24px] text-white leading-[36px] tracking-[-1.5%] w-full md:w-[951px]">
+        <span className="font-poppins text-center text-[24px] text-white leading-[36px] tracking-[-1.5%] w-full md:w-[951px]">
           Ours is an ecosystem of blockchain-intrinsic products and services with the sole aim of permeating all areas of the globe with its influence
           in the blockchain ecosystem.
         </span>
@@ -169,9 +169,8 @@ const Section2 = () => {
   const { theme } = useThemeContext();
   return (
     <div
-      className={`flex flex-col md:flex-row-reverse justify-center w-full items-center gap-3 ${
-        theme === "light" ? "bg-[#387ce1]" : "bg-[#387ce1]/30"
-      } py-10 px-10`}
+      className={`flex flex-col md:flex-row-reverse justify-center w-full items-center gap-3 ${theme === "light" ? "bg-[#1A0E27]" : "bg-[#1A0E27]/30"
+        } py-10 px-10`}
     >
       <div className="md:w-1/2 w-full flex justify-center items-center">
         <img src="/images/frame_2.svg" alt="frame_1" className="h-full" />
@@ -215,9 +214,8 @@ const Section4 = () => {
   const { theme } = useThemeContext();
   return (
     <div
-      className={`flex flex-col md:flex-row-reverse justify-center w-full items-center gap-3 ${
-        theme === "light" ? "bg-[#387ce1]" : "bg-[#387ce1]/30"
-      } py-10 px-10`}
+      className={`flex flex-col md:flex-row-reverse justify-center w-full items-center gap-3 ${theme === "light" ? "bg-[#1A0E27]" : "bg-[#1A0E27]/30"
+        } py-10 px-10`}
     >
       <div className="w-full md:w-1/2 flex justify-center items-center">
         <img src="/images/frame_4.svg" alt="frame_1" className="h-full" />
@@ -237,7 +235,7 @@ const Partners = () => {
   const { theme } = useThemeContext();
   return (
     <div className={`flex flex-col justify-center gap-4 items-center w-full ${theme === "light" ? "bg-[#dcdcdc]/60" : "bg-[#000]/75"} py-10 px-10`}>
-      <h3 className="font-poppins uppercase font-[700] text-[#387ce1] text-[28px] md:text-[40px]">Our Partners</h3>
+      <h3 className="font-poppins uppercase font-[700] text-[#1A0E27] text-[28px] md:text-[40px]">Our Partners</h3>
       <div className="flex flex-wrap justify-center items-center gap-6">
         {_.map(partners, (partner, index) => (
           <div key={index}>
@@ -348,77 +346,20 @@ const Products = () => {
   );
 
   return (
-    <div className={`flex flex-col justify-center w-full items-center gap-3 ${theme === "light" ? "bg-[#387ce1]" : "bg-[#387ce1]/30"} py-10 px-10`}>
+    <div className={`flex flex-col justify-center w-full items-center gap-3 ${theme === "light" ? "bg-[#1A0E27]" : "bg-[#1A0E27]/30"} py-10 px-10`}>
       <h3 className="font-poppins capitalize font-[700] text-[30px] md:text-[62px] text-[#fff]">Get Familiar With Our Products</h3>
       <div className="flex justify-center items-center gap-3 w-full flex-wrap">
         <button
           onClick={() => setSelectedProduct(PRODUCTS.DEX)}
-          className={`rounded-[5px] border border-[#fff] px-3 flex justify-center items-center font-poppins uppercase ${
-            selectedProduct === PRODUCTS.DEX ? "bg-white text-[#387ce1]" : "text-white bg-transparent"
-          } gap-1 py-1`}
+          className={`rounded-[5px] border border-[#fff] px-3 flex justify-center items-center font-poppins uppercase ${selectedProduct === PRODUCTS.DEX ? "bg-white text-[#1A0E27]" : "text-white bg-transparent"
+            } gap-1 py-1`}
         >
           <FaExchangeAlt />
-          <span>Decentralized Exchange</span>
-        </button>
-        <button
-          onClick={() => setSelectedProduct(PRODUCTS.CEX)}
-          className={`rounded-[5px] border border-[#fff] px-3 flex justify-center items-center font-poppins uppercase ${
-            selectedProduct === PRODUCTS.CEX ? "bg-white text-[#387ce1]" : "text-white bg-transparent"
-          } gap-1 py-1`}
-        >
-          <FaExchangeAlt />
-          <span>Centralized Exchange</span>
-        </button>
-        <button
-          onClick={() => setSelectedProduct(PRODUCTS.MULTI_SIG)}
-          className={`rounded-[5px] border border-[#fff] px-3 flex justify-center items-center font-poppins uppercase ${
-            selectedProduct === PRODUCTS.MULTI_SIG ? "bg-white text-[#387ce1]" : "text-white bg-transparent"
-          } gap-1 py-1`}
-        >
-          <FaWallet />
-          <span>Multi-Sig Wallet</span>
-        </button>
-        <button
-          onClick={() => setSelectedProduct(PRODUCTS.STAKE)}
-          className={`rounded-[5px] border border-[#fff] px-3 flex justify-center items-center font-poppins uppercase ${
-            selectedProduct === PRODUCTS.STAKE ? "bg-white text-[#387ce1]" : "text-white bg-transparent"
-          } gap-1 py-1`}
-        >
-          <FaDiceSix />
-          <span>Staking Platform</span>
-        </button>
-        <button className="rounded-[5px] border border-[#fff] px-3 flex justify-center items-center font-poppins uppercase text-white bg-transparent gap-1 py-1">
-          <FiMonitor />
-          <span>CryptoTimes TV</span>
-        </button>
-        <button className="rounded-[5px] border border-[#fff] px-3 flex justify-center items-center font-poppins uppercase text-white bg-transparent gap-1 py-1">
-          <FaWallet />
-          <span>Mobile Wallet</span>
-        </button>
-        <button className="rounded-[5px] border border-[#fff] px-3 flex justify-center items-center font-poppins uppercase text-white bg-transparent gap-1 py-1">
-          <FaImages />
-          <span>NFT Marketplace</span>
-        </button>
-        <button className="rounded-[5px] border border-[#fff] px-3 flex justify-center items-center font-poppins uppercase text-white bg-transparent gap-1 py-1">
-          <FaMoneyBill />
-          <span>Vefi Pay</span>
-        </button>
-        <button className="rounded-[5px] border border-[#fff] px-3 flex justify-center items-center font-poppins uppercase text-white bg-transparent gap-1 py-1">
-          <FaAtom />
-          <span>Alterverse</span>
-        </button>
-        <button className="rounded-[5px] border border-[#fff] px-3 flex justify-center items-center font-poppins uppercase text-white bg-transparent gap-1 py-1">
-          <FaExchangeAlt />
-          <span>3Swap</span>
-        </button>
-        <button className="rounded-[5px] border border-[#fff] px-3 flex justify-center items-center font-poppins uppercase text-white bg-transparent gap-1 py-1">
-          <FiLink2 />
-          <span>Blockchain</span>
+          <span>Dapps</span>
         </button>
       </div>
       <div className="flex justify-center items-center w-full py-6">
-        {selectedProduct === PRODUCTS.DEX && <DEX />} {selectedProduct === PRODUCTS.MULTI_SIG && <MultiSig />}{" "}
-        {selectedProduct === PRODUCTS.STAKE && <Staking />} {selectedProduct === PRODUCTS.CEX && <CEX />}
+        {selectedProduct === PRODUCTS.DEX && <DEX />}
       </div>
     </div>
   );
@@ -428,7 +369,7 @@ const Team = () => {
   const { theme } = useThemeContext();
   return (
     <div className={`flex justify-center w-full items-center gap-3 ${theme === "light" ? "bg-white" : "bg-[#000]/75"} py-10 px-10 flex-col`}>
-      <h3 className="font-poppins uppercase font-[700] text-[28px] md:text-[40px] text-[#387ce1]">The Team</h3>
+      <h3 className="font-poppins uppercase font-[700] text-[28px] md:text-[40px] text-[#1A0E27]">The Team</h3>
       <p
         className={`font-[400] text-[16px] md:text-[27px] font-poppins ${theme === "light" ? "text-[#000]" : "text-[#fff]"} w-full md:max-w-[1146px]`}
       >
@@ -436,9 +377,8 @@ const Team = () => {
         relevant to ecosystem.
       </p>
       <div
-        className={`flex justify-center flex-col md:flex-row items-center gap-6 w-full ${
-          theme === "light" ? "text-[#000]" : "text-[#fff]"
-        } overflow-auto`}
+        className={`flex justify-center flex-col md:flex-row items-center gap-6 w-full ${theme === "light" ? "text-[#000]" : "text-[#fff]"
+          } overflow-auto`}
       >
         {_.map(team, (member, index) => (
           <div key={index} className="flex flex-col justify-center items-center gap-2 h-full px-2 py-2">
@@ -487,10 +427,10 @@ export default function IndexPage() {
   return (
     <>
       <Head>
-        <title>Vefi Ecosystem</title>
+        <title>VefDefi</title>
       </Head>
       <div className={`flex flex-col justify-start items-center w-screen h-screen overflow-auto ${theme === "light" ? "bg-[#fff]" : "bg-[#000]"}`}>
-        <div className={`${theme === "light" ? "bg-[#387ce1]" : "bg-[#387ce1]/30"} flex flex-col w-full px-4 justify-between gap-12`}>
+        <div className={`${theme === "light" ? "bg-[#1A0E27]" : "bg-[#1A0E27]/30"} flex flex-col w-full px-4 justify-between gap-12`}>
           <Header homeRef={homeRef} partnersRef={partnersRef} teamRef={teamRef} productsRef={productsRef} />
           <div ref={homeRef} className="w-full">
             <Hero />
@@ -506,11 +446,8 @@ export default function IndexPage() {
         <div ref={productsRef} className="w-full">
           <Products />
         </div>
-        <div ref={teamRef} className="w-full">
-          <Team />
-        </div>
         <div
-          className={`${theme === "light" ? "bg-[#387ce1]" : "bg-[#387ce1]/30"} flex flex-col w-full px-4 justify-center items-center gap-12`}
+          className={`${theme === "light" ? "bg-[#1A0E27]" : "bg-[#1A0E27]/30"} flex flex-col w-full px-4 justify-center items-center gap-12`}
         >
           {/* <h3 className="font-poppins font-[700] text-[30px] md:text-[48px] text-[#fff]">Buy VEF Tokens</h3>
           <p className="font-[400] text-[16px] md:text-[27px] font-poppins text-[#fff] w-full md:max-w-[1146px]">

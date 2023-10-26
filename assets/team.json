@@ -9,7 +9,7 @@
     }
   },
   {
-    "name": "Adefeyitimi Gbolahan Adeyeloja",
+    "name": "Adefeyitimi G. Adeyeloja",
     "position": "Chief Technical Officer",
     "image": "/images/timmy.png",
     "socials": {
@@ -24,6 +24,14 @@
     "image": "/images/barinor_kue.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/kue-barinor-paul-0793a3b3/"
+    }
+  },
+  {
+    "name": "Damii Dennison",
+    "position": "Head of Product",
+    "image": "/images/damii.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/damii-dennison-aa7975255"
     }
   }
 ]

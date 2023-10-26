@@ -33,7 +33,7 @@
 <path style="mix-blend-mode:multiply" fill-rule="evenodd" clip-rule="evenodd" d="M166.76 126.762C156.907 108.386 143.31 95.0839 130.846 90.4529C129.817 90.7054 128.824 91.0861 127.89 91.586C115.722 97.8428 115.426 121.491 127.201 144.35C138.975 167.21 158.434 180.709 170.603 174.452C173.881 172.676 176.402 169.77 177.697 166.274C177.21 152.457 173.463 138.952 166.76 126.861V126.762Z" fill="url(#paint23_linear_21_12362)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M100.253 72.7662C157.35 92.1279 186.416 148.686 168.09 208.002L100.253 72.7662Z" fill="#173664"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M102.421 74.2935C151.685 90.9454 176.662 139.719 160.897 190.808L102.421 74.2935Z" fill="#1D375E"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M70.2017 72.5199C94.8339 60.1048 132.915 85.674 155.084 129.669C177.253 173.664 175.233 219.383 150.552 231.847C125.87 244.311 87.8384 218.742 65.6694 174.747C43.5004 130.753 45.5203 84.9843 70.2017 72.5199Z" fill="#387CE1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M70.2017 72.5199C94.8339 60.1048 132.915 85.674 155.084 129.669C177.253 173.664 175.233 219.383 150.552 231.847C125.87 244.311 87.8384 218.742 65.6694 174.747C43.5004 130.753 45.5203 84.9843 70.2017 72.5199Z" fill="#1A0E27"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M71.0393 76.5598C94.7847 64.5881 131.339 89.1719 152.67 131.492C174.002 173.811 172.031 217.806 148.286 229.778C124.54 241.749 87.9862 217.166 66.6547 174.846C45.3233 132.526 47.2938 88.5315 71.0393 76.5598Z" fill="url(#paint24_radial_21_12362)"/>
 <path style="mix-blend-mode:multiply" fill-rule="evenodd" clip-rule="evenodd" d="M65.1768 90.7484C88.4788 79.023 124.294 103.114 145.182 144.596C160.356 174.698 163.508 205.687 155.035 224.9C172.08 208.445 171.637 169.279 152.572 131.295C131.24 88.9748 94.6861 64.3909 70.9407 76.3626C66.3667 78.9825 62.4331 82.5875 59.4252 86.9164C56.4173 91.2452 54.4105 96.1892 53.5504 101.39C56.3367 96.7965 60.3221 93.0494 65.0782 90.5513L65.1768 90.7484Z" fill="url(#paint25_radial_21_12362)"/>
 <path style="mix-blend-mode:screen" fill-rule="evenodd" clip-rule="evenodd" d="M54.3879 140.606C56.9931 152.498 61.1159 164.005 66.6547 174.846C84.8333 210.909 113.998 233.965 136.955 232.783C145.675 196.129 121.584 133.413 81.6311 124.397C70.4973 121.934 60.2503 125.826 54.3879 140.606Z" fill="url(#paint26_radial_21_12362)"/>
@@ -92,7 +92,7 @@
 <stop offset="1" stop-color="#FCFCFF"/>
 </linearGradient>
 <linearGradient id="paint8_linear_21_12362" x1="227.454" y1="43.0094" x2="267.459" y2="124.987" gradientUnits="userSpaceOnUse">
-<stop stop-color="#387CE1"/>
+<stop stop-color="#1A0E27"/>
 <stop offset="0.37" stop-color="#4F94FB"/>
 <stop offset="1" stop-color="#1455B5"/>
 </linearGradient>
@@ -105,7 +105,7 @@
 <stop offset="1" stop-color="#756C80"/>
 </linearGradient>
 <radialGradient id="paint11_radial_21_12362" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(244.006 77.7421) scale(81.1877 81.1908)">
-<stop stop-color="#387CE1"/>
+<stop stop-color="#1A0E27"/>
 <stop offset="1"/>
 </radialGradient>
 <linearGradient id="paint12_linear_21_12362" x1="191.244" y1="41.827" x2="251.104" y2="145.531" gradientUnits="userSpaceOnUse">
@@ -159,7 +159,7 @@
 <stop offset="1" stop-color="#FCFCFF"/>
 </linearGradient>
 <radialGradient id="paint24_radial_21_12362" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(92.9126 211.549) scale(139.073 139.079)">
-<stop stop-color="#387CE1"/>
+<stop stop-color="#1A0E27"/>
 <stop offset="1" stop-color="#0C52B9"/>
 </radialGradient>
 <radialGradient id="paint25_radial_21_12362" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(48.5747 187.655) scale(147.645 147.651)">
@@ -167,7 +167,7 @@
 <stop offset="1" stop-color="#756C80"/>
 </radialGradient>
 <radialGradient id="paint26_radial_21_12362" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(66.704 227.117) scale(104.785 104.789)">
-<stop stop-color="#387CE1"/>
+<stop stop-color="#1A0E27"/>
 <stop offset="1"/>
 </radialGradient>
 <linearGradient id="paint27_linear_21_12362" x1="62.615" y1="74.8355" x2="57.639" y2="164.204" gradientUnits="userSpaceOnUse">
