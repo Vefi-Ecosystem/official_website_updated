@@ -77,10 +77,10 @@ const Header = ({ homeRef, partnersRef, teamRef, productsRef }: IHeaderProps) =>
 const Footer = () => (
   <div className="flex flex-col justify-center items-center overflow-auto w-full gap-6">
     <div className="flex justify-between items-center gap-6 uppercase text-white font-poppins font-[500] overflow-auto w-full">
-      <a href="https://twitter.com/vefi_official?s=20&t=Nyz3yLS_sKZ0asOgOl3NGw" rel="noreferrer" target="_blank">
+      <a href="https://x.com/vefdefi?t=tJZF3rr5Btl_gZrWRnNB2g&s=09-" rel="noreferrer" target="_blank">
         Twitter
       </a>
-      <a href="https://t.me/vefi_official" rel="noreferrer" target="_blank">
+      <a href="https://t.me/VefDefi-Medium/" rel="noreferrer" target="_blank">
         Telegram
       </a>
       <a href="https://www.youtube.com/channel/UCXMsXe5AvNSPL32Yna8MKdQ" rel="noreferrer" target="_blank">
@@ -177,11 +177,10 @@ const Section2 = () => {
       </div>
       <div className={`flex flex-col justify-start items-start gap-3 w-full md:w-1/2 text-[#fff]`}>
         <h3 className="font-poppins capitalize font-[700] w-full text-[28px] md:text-[40px]">
-          Addressing this problem is the core ideology behind the emergence of Vefi Ecosystem
+          Addressing this problem is the core ideology behind the emergence of VefDefi Ecosystem
         </h3>
         <p className="font-poppins font-[400] text-[18px] md:text-[24px]">
-          Beautiful as this might seem for the African continent, it is discomforting that it maintains this position primarily as the consumer
-          continent without a significant level of indigenous blockchain projects of its own.
+          VefDefi is a comprehensive decentralized finance (DeFi) ecosystem designed to revolutionize the way users interact with blockchain-based financial services. It encompasses a range of innovative features, each contributing to a holistic DeFi experience.
         </p>
       </div>
     </div>
