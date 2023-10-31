@@ -2,7 +2,7 @@ import "../scripts/embr";
 import React, { MutableRefObject, useRef, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { FaAtom, FaDiceSix, FaExchangeAlt, FaGithub, FaImages, FaMoneyBill, FaTelegramPlane, FaWallet } from "react-icons/fa";
+import { FaAtom, FaDiceSix, FaExchangeAlt, FaGithub, FaImages, FaMoneyBill, FaTelegramPlane, FaWallet, FaMedium } from "react-icons/fa";
 import { FiYoutube, FiTwitter, FiLinkedin, FiMenu, FiX, FiMonitor, FiLink2, FiInstagram } from "react-icons/fi";
 import _ from "lodash";
 import { useThemeContext } from "../context/themes";
@@ -37,7 +37,7 @@ const Header = ({ homeRef, partnersRef, teamRef, productsRef }: IHeaderProps) =>
       </div>
       <Image src="/header.svg" alt="logo" width={100} height={100} />
       <div className="hidden md:flex justify-center gap-10 items-center">
-        <a href="https://t.me/vefi_official" rel="noreferrer" target="_blank">
+        <a href="https://t.me/VefDefi" rel="noreferrer" target="_blank">
           <button className="bg-[linear-gradient(180deg,_#d6d6d6_0%,_#fff_100%)] text-[#105dcf] font-[700] rounded-[30px] px-2 py-2 font-poppins shadow-[7.551e-16px_12.3333px_24.6667px_rgba(51,51,51,0.24),_inset_-2.34951e-16px_-3.83704px_3.83704px_#cccccc,_inset_2.34951e-16px_3.83704px_3.83704px_#fff] text-[13px]">
             Join our community
           </button>
@@ -77,15 +77,15 @@ const Header = ({ homeRef, partnersRef, teamRef, productsRef }: IHeaderProps) =>
 const Footer = () => (
   <div className="flex flex-col justify-center items-center overflow-auto w-full gap-6">
     <div className="flex justify-between items-center gap-6 uppercase text-white font-poppins font-[500] overflow-auto w-full">
-      <a href="https://x.com/vefdefi?t=tJZF3rr5Btl_gZrWRnNB2g&s=09-" rel="noreferrer" target="_blank">
+      <a href="https://x.com/vefdefi?t=tJZF3rr5Btl_gZrWRnNB2g&s=09" rel="noreferrer" target="_blank">
         Twitter
       </a>
-      <a href="https://t.me/VefDefi-Medium/" rel="noreferrer" target="_blank">
+      <a href="https://t.me/VefDefi" rel="noreferrer" target="_blank">
         Telegram
       </a>
-      <a href="https://www.youtube.com/channel/UCXMsXe5AvNSPL32Yna8MKdQ" rel="noreferrer" target="_blank">
+      {/* <a href="https://www.youtube.com/channel/UCXMsXe5AvNSPL32Yna8MKdQ" rel="noreferrer" target="_blank">
         YouTube
-      </a>
+      </a> */}
       <a href="https://instagram.com/vefi.official" rel="noreferrer" target="_blank">
         Instagram
       </a>
@@ -104,19 +104,24 @@ const Hero = () => (
     </div>
     <div className="flex flex-col md:flex-row justify-between items-center gap-5 w-full px-3">
       <div className="flex flex-row md:flex-col justify-center items-center gap-2">
-        <a href="https://www.youtube.com/channel/UCXMsXe5AvNSPL32Yna8MKdQ" rel="noreferrer" target="_blank">
+        {/* <a href="https://www.youtube.com/channel/UCXMsXe5AvNSPL32Yna8MKdQ" rel="noreferrer" target="_blank">
           <button className="flex justify-center bg-[#f5f5f5] rounded-[100%] items-center w-[40px] h-[40px] px-1 py-1 text-[20px]">
             <FiYoutube />
           </button>
-        </a>
-        <a href="https://twitter.com/vefi_official?s=20&t=Nyz3yLS_sKZ0asOgOl3NGw" rel="noreferrer" target="_blank">
+        </a> */}
+        <a href="https://x.com/vefdefi?t=tJZF3rr5Btl_gZrWRnNB2g&s=09" rel="noreferrer" target="_blank">
           <button className="flex justify-center bg-[#f5f5f5] rounded-[100%] items-center w-[40px] h-[40px] px-1 py-1 text-[20px]">
             <FiTwitter />
           </button>
         </a>
-        <a href="https://t.me/vefi_official" rel="noreferrer" target="_blank">
+        <a href="https://t.me/VefDefi" rel="noreferrer" target="_blank">
           <button className="flex justify-center bg-[#f5f5f5] rounded-[100%] items-center w-[40px] h-[40px] px-1 py-1 text-[20px]">
             <FaTelegramPlane />
+          </button>
+        </a>
+        <a href="https://medium.com/@VefDefi/vefi-is-re-inventing-itself-d4f5bb1f3d06" rel="noreferrer" target="_blank">
+          <button className="flex justify-center bg-[#f5f5f5] rounded-[100%] items-center w-[40px] h-[40px] px-1 py-1 text-[20px]">
+            <FaMedium />
           </button>
         </a>
         <a href="https://instagram.com/vefi.official" rel="noreferrer" target="_blank">
@@ -130,12 +135,19 @@ const Hero = () => (
           Ours is an ecosystem of blockchain-intrinsic products and services with the sole aim of permeating all areas of the globe with its influence
           in the blockchain ecosystem.
         </span>
-        <a href="https://twitter.com/vefi_official?s=20&t=Nyz3yLS_sKZ0asOgOl3NGw" rel="noreferrer" target="_blank">
-          <button className="bg-[linear-gradient(180deg,_#d6d6d6_0%,_#fff_100%)] text-[#105dcf] font-[700] rounded-[30px] px-2 py-2 font-poppins shadow-[7.551e-16px_12.3333px_24.6667px_rgba(51,51,51,0.24),_inset_-2.34951e-16px_-3.83704px_3.83704px_#cccccc,_inset_2.34951e-16px_3.83704px_3.83704px_#fff] text-[13px]">
-            Explore Ecosystem
-          </button>
-        </a>
-        <div className="bg-[#d9d9d9]/10 shadow-[inset_31.5px_-31.5px_31.5px_rgba(165,165,165,0.1),_inset_-31.5px_31.5px_31.5px_rgba(255,255,255,0.1)] backdrop-blur-[31.5px]">
+        <div className="flex justify-center gap-x-5 sm:flex-row flex-col">
+          <a href="https://x.com/vefdefi?t=tJZF3rr5Btl_gZrWRnNB2g&s=09" rel="noreferrer" target="_blank">
+            <button className="bg-[linear-gradient(180deg,_#d6d6d6_0%,_#fff_100%)] text-[#105dcf] font-[700] rounded-[30px] px-2 py-2 font-poppins shadow-[7.551e-16px_12.3333px_24.6667px_rgba(51,51,51,0.24),_inset_-2.34951e-16px_-3.83704px_3.83704px_#cccccc,_inset_2.34951e-16px_3.83704px_3.83704px_#fff] text-[13px]">
+              Explore Ecosystem
+            </button>
+          </a>
+          <a href="https://vefdefi.gitbook.io/vefdefi/" rel="noreferrer" target="_blank">
+            <button className="bg-[linear-gradient(180deg,_#d6d6d6_0%,_#fff_100%)] text-[#105dcf] font-[700] rounded-[30px] px-2 py-2 font-poppins shadow-[7.551e-16px_12.3333px_24.6667px_rgba(51,51,51,0.24),_inset_-2.34951e-16px_-3.83704px_3.83704px_#cccccc,_inset_2.34951e-16px_3.83704px_3.83704px_#fff] text-[13px]">
+              Whitepaper
+            </button>
+          </a>
+        </div>
+        <div className="">
           <img src="/images/scout.svg" alt="scout" className="relative top-[-20px] w-[300px] h-full" />
         </div>
       </div>
@@ -272,7 +284,7 @@ const Products = () => {
           Our decentralized exchange is a multi-chain DApp that gives users the ability to create liquidity pools and earn LP tokens which can be
           utilized on our yield farming platform.
         </p>
-        <a href="https://dapps.vefinetwork.org/dex" target="_blank" rel="noreferrer">
+        <a href="https://vefdefidapps.netlify.app/dex" target="_blank" rel="noreferrer">
           <button className="bg-[linear-gradient(180deg,_#d6d6d6_0%,_#fff_100%)] text-[#105dcf] font-[700] rounded-[30px] px-8 py-2 font-poppins shadow-[7.551e-16px_12.3333px_24.6667px_rgba(51,51,51,0.24),_inset_-2.34951e-16px_-3.83704px_3.83704px_#cccccc,_inset_2.34951e-16px_3.83704px_3.83704px_#fff] text-[13px]">
             Enter App
           </button>
@@ -370,12 +382,11 @@ const Team = () => {
     <div className={`flex justify-center w-full items-center gap-3 ${theme === "light" ? "bg-white" : "bg-[#000]/75"} py-10 px-10 flex-col`}>
       <h3 className="font-poppins uppercase font-[700] text-[28px] md:text-[40px] text-[#1A0E27]">The Team</h3>
       <p
-        className={`font-[400] text-[16px] md:text-[27px] font-poppins ${theme === "light" ? "text-[#000]" : "text-[#fff]"} w-full md:max-w-[1146px]`}
+        className={`font-[400] text-[16px] md:text-[27px] text-center font-poppins ${theme === "light" ? "text-[#000]" : "text-[#fff]"} w-full md:max-w-[1146px]`}
       >
-        The Vefi Ecosystem is run by individuals who are exceling in their endeavors which include business, software engineering, law and all that is
-        relevant to ecosystem.
+        Vefidefi team comprises of highly motivated and passionate team member members located around the globe. Our goal is to collaborate in building web3 solutions.
       </p>
-      <div
+      {/* <div
         className={`flex justify-center flex-col md:flex-row items-center gap-6 w-full ${theme === "light" ? "text-[#000]" : "text-[#fff]"
           } overflow-auto`}
       >
@@ -409,7 +420,7 @@ const Team = () => {
             )}
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
@@ -426,7 +437,7 @@ export default function IndexPage() {
   return (
     <>
       <Head>
-        <title>VefDefi</title>
+        <title>VefDefi | Welcome to the Ecosystem</title>
       </Head>
       <div className={`flex flex-col justify-start items-center w-screen h-screen overflow-auto ${theme === "light" ? "bg-[#fff]" : "bg-[#000]"}`}>
         <div className={`${theme === "light" ? "bg-[#1A0E27]" : "bg-[#1A0E27]/30"} flex flex-col w-full px-4 justify-between gap-12`}>
@@ -441,6 +452,9 @@ export default function IndexPage() {
         <Section4 />
         <div ref={partnersRef} className="w-full">
           <Partners />
+        </div>
+        <div ref={teamRef} className="w-full">
+          <Team />
         </div>
         <div ref={productsRef} className="w-full">
           <Products />
