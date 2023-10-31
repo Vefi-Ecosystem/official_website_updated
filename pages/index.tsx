@@ -135,12 +135,19 @@ const Hero = () => (
           Ours is an ecosystem of blockchain-intrinsic products and services with the sole aim of permeating all areas of the globe with its influence
           in the blockchain ecosystem.
         </span>
-        <a href="https://x.com/vefdefi?t=tJZF3rr5Btl_gZrWRnNB2g&s=09" rel="noreferrer" target="_blank">
-          <button className="bg-[linear-gradient(180deg,_#d6d6d6_0%,_#fff_100%)] text-[#105dcf] font-[700] rounded-[30px] px-2 py-2 font-poppins shadow-[7.551e-16px_12.3333px_24.6667px_rgba(51,51,51,0.24),_inset_-2.34951e-16px_-3.83704px_3.83704px_#cccccc,_inset_2.34951e-16px_3.83704px_3.83704px_#fff] text-[13px]">
-            Explore Ecosystem
-          </button>
-        </a>
-        <div className="bg-[#d9d9d9]/10 shadow-[inset_31.5px_-31.5px_31.5px_rgba(165,165,165,0.1),_inset_-31.5px_31.5px_31.5px_rgba(255,255,255,0.1)] backdrop-blur-[31.5px]">
+        <div className="flex justify-center gap-x-5 sm:flex-row flex-col">
+          <a href="https://x.com/vefdefi?t=tJZF3rr5Btl_gZrWRnNB2g&s=09" rel="noreferrer" target="_blank">
+            <button className="bg-[linear-gradient(180deg,_#d6d6d6_0%,_#fff_100%)] text-[#105dcf] font-[700] rounded-[30px] px-2 py-2 font-poppins shadow-[7.551e-16px_12.3333px_24.6667px_rgba(51,51,51,0.24),_inset_-2.34951e-16px_-3.83704px_3.83704px_#cccccc,_inset_2.34951e-16px_3.83704px_3.83704px_#fff] text-[13px]">
+              Explore Ecosystem
+            </button>
+          </a>
+          <a href="https://vefdefi.gitbook.io/vefdefi/" rel="noreferrer" target="_blank">
+            <button className="bg-[linear-gradient(180deg,_#d6d6d6_0%,_#fff_100%)] text-[#105dcf] font-[700] rounded-[30px] px-2 py-2 font-poppins shadow-[7.551e-16px_12.3333px_24.6667px_rgba(51,51,51,0.24),_inset_-2.34951e-16px_-3.83704px_3.83704px_#cccccc,_inset_2.34951e-16px_3.83704px_3.83704px_#fff] text-[13px]">
+              Whitepaper
+            </button>
+          </a>
+        </div>
+        <div className="">
           <img src="/images/scout.svg" alt="scout" className="relative top-[-20px] w-[300px] h-full" />
         </div>
       </div>
