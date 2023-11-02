@@ -279,10 +279,10 @@ const Products = () => {
         </div>
       </div>
       <div className="flex justify-center md:justify-start items-center md:items-start flex-col text-white gap-4 max-sm:w-full">
-        <h3 className="text-[28px] md:text-[50px] font-poppins font-[700]">Decentralized Exchange</h3>
+        <h3 className="text-[28px] md:text-[50px] font-poppins font-[700]">
+          VefDefi Dapps</h3>
         <p className="font-[400] font-poppins text-justify max-w-[598px]">
-          Our decentralized exchange is a multi-chain DApp that gives users the ability to create liquidity pools and earn LP tokens which can be
-          utilized on our yield farming platform.
+          Our Dapps contains latest Defi features from decentralized exchange, staking, lending, launchpad, bridge etc. Earn by creating pools and farming .
         </p>
         <a href="https://vefdefidapps.netlify.app/dex" target="_blank" rel="noreferrer">
           <button className="bg-[linear-gradient(180deg,_#d6d6d6_0%,_#fff_100%)] text-[#105dcf] font-[700] rounded-[30px] px-8 py-2 font-poppins shadow-[7.551e-16px_12.3333px_24.6667px_rgba(51,51,51,0.24),_inset_-2.34951e-16px_-3.83704px_3.83704px_#cccccc,_inset_2.34951e-16px_3.83704px_3.83704px_#fff] text-[13px]">
