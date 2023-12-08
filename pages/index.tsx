@@ -265,11 +265,36 @@ const Products = () => {
     DEX,
     MULTI_SIG,
     STAKE,
-    CEX
+    CEX,
+    THREESWAP
   }
 
   const { theme } = useThemeContext();
   const [selectedProduct, setSelectedProduct] = useState<PRODUCTS>(PRODUCTS.DEX);
+
+  function THREESWAP() {
+    return (
+      <div className="flex justify-center items-center gap-10 w-full flex-col md:flex-row">
+        <div className="avatar">
+          <div className="w-[100px] md:w-[300px] rounded-full ring ring-info ring-offset-base-100 ring-offset-2">
+            <img src="/images/3swap/3swap_shot.jpg" alt="Dex_View" />
+          </div>
+        </div>
+        <div className="flex justify-center md:justify-start items-center md:items-start flex-col text-white gap-4 max-sm:w-full">
+          <h3 className="text-[28px] md:text-[50px] font-poppins font-[700]">
+            3Swap</h3>
+          <p className="font-[400] font-poppins text-justify max-w-[598px]">
+            One of the best DeFi/DEX Aggregator with the most liquidity and the best rates on EVM.
+          </p>
+          <a href="https://3swap.io/exchange" target="_blank" rel="noreferrer">
+            <button className="bg-[linear-gradient(180deg,_#d6d6d6_0%,_#fff_100%)] text-[#105dcf] font-[700] rounded-[30px] px-8 py-2 font-poppins shadow-[7.551e-16px_12.3333px_24.6667px_rgba(51,51,51,0.24),_inset_-2.34951e-16px_-3.83704px_3.83704px_#cccccc,_inset_2.34951e-16px_3.83704px_3.83704px_#fff] text-[13px]">
+              Enter App
+            </button>
+          </a>
+        </div>
+      </div>
+    )
+  }
 
   const DEX = () => (
     <div className="flex justify-center items-center gap-10 w-full flex-col md:flex-row">
@@ -368,9 +393,18 @@ const Products = () => {
           <FaExchangeAlt />
           <span>Dapps</span>
         </button>
+        <button
+          onClick={() => setSelectedProduct(PRODUCTS.THREESWAP)}
+          className={`rounded-[5px] border border-[#fff] px-3 flex justify-center items-center font-poppins uppercase ${selectedProduct === PRODUCTS.DEX ? "bg-white text-[#1A0E27]" : "text-white bg-transparent"
+            } gap-1 py-1`}
+        >
+          {/* <FaExchangeAlt /> */}
+          <span>3Swap</span>
+        </button>
       </div>
       <div className="flex justify-center items-center w-full py-6">
         {selectedProduct === PRODUCTS.DEX && <DEX />}
+        {selectedProduct === PRODUCTS.THREESWAP && <THREESWAP />}
       </div>
     </div>
   );
